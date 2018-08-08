@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+body {
+    font-family: monospace;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.cabecalho__logo {
+    max-width: 120px;
+    margin: 24px auto 0px;
+}
+
+.cabecalho__titulo {
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    padding: 16px 0 10px;
+}
+
+.pagina__teaser {
+    padding: 12px;
+    margin: 0 auto;
+    max-width: 400px;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+}
+
+.rodape__assinatura {
+    padding-top: 24px;
+    text-align: center;
+}
+
+@media (max-width: 400px){
+    .cabecalho__titulo, 
+    .pagina__teaser,
+    .rodape__assinatura {
+        text-align: left;
+        padding: 12px;
+    }
+
+    .cabecalho__logo {
+        margin: 12px 0 0 12px;
+        max-width: 60px;
+    }
+}

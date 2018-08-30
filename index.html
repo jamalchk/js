@@ -10,12 +10,24 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="img/javascript.png" alt="" class="cabecalho__logo">
+        <header class="topo">
+            <img class="cabecalho__logo" src="img/javascript.png" alt="JavaScript">
             <h1 class="cabecalho__titulo">JavaScript</h1>
         </header>
         <main>
-            <p class="pagina__teaser">Em breve, estarei organizando meus estudos sobre JavaScript nesta página. Fique ligado (ou não).</p>
+            <div class="cartao__flex-container">
+                <div class="cartao">
+                    <a class="cartao__link" href="https://jamalchk.com/timeline" target="_blank">1. Linha do tempo</a>
+                    <p class="cartao__tag-container"><span class="cartao__tag">App</span></p>
+                    <time class="cartao__tempo" datetime="2018-08-22 20:00">22 de agosto</time>
+                </div>
+        
+                <div class="cartao">
+                    <a class="cartao__link" href="https://jamalchk.com/jogojs-0" target="_blank">2. Pong</a>
+                    <p class="cartao__tag-container"><span class="cartao__tag">Jogo / Tutorial</span></p>
+                    <time class="cartao__tempo" datetime="2018-08-28 20:00">28 de agosto</time>
+                </div>
+            </div>
         </main>
         <footer class="rodape">
             <p class="rodape__assinatura">por Jamal Charanek</p>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 11 | Capítulo 1</title>
+</head>
+<body>
+    <script>
+        var precoDoProduto = Number(prompt("Quanto custa o produto?"));
+        var pagamentoAVista = precoDoProduto - (precoDoProduto * 0.1);
+        var pagamentoParcela = precoDoProduto / 3;
+        document.write("<h1>Preço: R$" + precoDoProduto.toFixed(2) + "<br><br>À vista: R$" + pagamentoAVista.toFixed(2) + "<br><br>Ou 3x de R$" + pagamentoParcela.toFixed(2) + "</h1>");
+    </script>
+</body>
+</html>

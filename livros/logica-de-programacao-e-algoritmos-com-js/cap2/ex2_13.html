@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {font-family: Arial; background: lightblue;}
+        body {max-width: 700px; margin: 0 auto;}
+    </style>
+</head>
+<body>
+    <h1>Programa Olá Você!</h1>
+    <form>
+        <label for="nome">Nome:
+            <input type="text" name="nome" id="nome">
+        </label>
+        <input type="button" value="Mostrar" onclick="mostrarOla()">
+    </form>
+
+    <p id="resposta"></p>
+    <script>
+        
+        function mostrarOla(){
+            var nomeDoUsuario = document.getElementById('nome').value;
+            var resposta = document.getElementById('resposta');
+            resposta.innerText = "E aí, " + nomeDoUsuario + "?";    
+        }
+        
+    </script>
+</body>
+</html>

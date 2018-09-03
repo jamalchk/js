@@ -1,6 +1,6 @@
 # Lógica de Programação e Algoritmos com JavaScript
 
-## Introdução
+## 1. Introdução
 
 ### Lógica de Programação
 
@@ -75,6 +75,89 @@ Com JavaScript, podemos interagir com os visitantes de um website a partir de:
 - Princípios de Orientação a Objetos em JavaScript, de Nicholas C. Zakas
 
 - Estruturas de dados e algoritmos em JavaScript, de Loiane Groner
+
+---
+
+### Variáveis e constantes
+
+São espaços alocados na memória do computador que permitem guardar informações e trabalhar com elas - como o valor que o cliente deseja sacar no terminal do caixa eletrônico. Como o nome sugere, os valores armazenados em uma variável podem ser alterados durante a execução do programa.
+
+Para as variáveis, declare com `var` e use a notação camelCase para declarar o nome da variável. No caso de constantes, use `const` e escreva o nome da constante em caixa alta.
+
+---
+
+### Comentários
+
+É de fundamental importância adicionar comentários para salientar a função de algum comando não usado com tanta frequência. Comentários também são importantes durante o desenvolvimento de um projeto, para que possamos retomar a linha de raciocínio assim que reiniciarmos os trabalhos.
+
+---
+
+## 2. Integração com HTML
+
+### Alguns métodos e propriedades
+
+- `document.getElementById('idName')`: pega um elemento do HTML que contenha o id informado.
+
+- `myElement.textContent`: altera o conteúdo de texto do meu elemento
+
+- `myElement.innerText`: também altera o conteúdo de texto do meu elemento
+
+- `myElement.innerHTML`: muda o conteúdo do meu elemento, podendo inclusive adicionar tags HTML. Não recomendado por questões de segurança
+
+- `document.getElementById('idName').value`: pegar o valor que está dentro deste elemento no HTML (útil para casos de input)
+
+| método/propriedade | o que faz                                                                                                                                                                                                                                                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `textContent`      | consulta ou altera o texto exibido por elementos HTML como parágrafos (`p`), cabeçalhos (`h1`, `h2`...) ou containers (`div`, `span`)                                                                                                                                                       |
+| `innerHTML`        | consulta ou altera o conteúdo de elementos HTML como parágrafos (`p`), cabeçalhos ou containers. Códigos HTML presentes no conteúdo são renderizados pelo navegador. Esta propriedade pode apresentar algum risco à segurança, dando margem para ataques do tipo XSS (Cross-Site Scripting) |
+| `value`            | consulta ou altera o conteúdo de campos de formulário                                                                                                                                                                                                                                       |
+
+### Formas de adicionar JavaScript ao HTML
+
+#### 1. Usando rotinas de tratamento de eventos HTML
+
+É mais ou menos parecido com a ideia de usar estilos inline. As tags do meu arquivo HTML precisarão trazer atributos do tipo "onclick". Não é uma prática encorajada pelo autor.
+
+#### 2. Usando rotinas de tratamento de eventos DOM
+
+JavaScript e HTML ficam separados, e o JavaScript é referenciado no arquivo HTML (sendo o script um arquivo externo). 
+
+```html
+<!-- exemplo de referência no topo do documento -->
+<script src="file.js"></script>
+```
+
+Em vez de usarmos "onclick" dentro da tag HTML como um atributo, podemos fazer o link entre elemento HTML e função JavaScript via id. Se meu botão tem "id" igual a "salvar", posso usar esse id lá no JavaScript. Possui um inconveniente: não dá pra anexar mais de uma função a um mesmo evento.
+
+#### 3. Usando listeners de eventos
+
+É a forma recomendada pelo autor. É possível registrar múltiplas funções para um mesmo elemento HTML em um mesmo evento.
+
+Usa-se o método `elemento.addEventListener('evento', função);`. Existe um terceiro parâmetro opcional, que é relacionado à forma de propagação do evento. O nome da função dentro dos parênteses é usado sem os parênteses.
+
+
+
+    
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

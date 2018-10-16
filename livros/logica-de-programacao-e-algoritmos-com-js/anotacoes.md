@@ -135,32 +135,41 @@ Em vez de usarmos "onclick" dentro da tag HTML como um atributo, podemos fazer o
 
 Usa-se o método `elemento.addEventListener('evento', função);`. Existe um terceiro parâmetro opcional, que é relacionado à forma de propagação do evento. O nome da função dentro dos parênteses é usado sem os parênteses.
 
+### Nomenclatura e escopo das variáveis
 
+No livro, a seguinte convenção é adotada (mas você pode seguir o que fazer mais sentido para você):
 
-    
+| Tipo de informação | Nomenclatura        | Exemplo     |
+| ------------------ | ------------------- | ----------- |
+| Entrada            | in(nomeDaVariavel)  | inNome      |
+| Saída              | out(nomeDaVariavel) | outResposta |
 
-                        
+#### Escopo
 
+As variáveis que vivem dentro de uma função só têm validade nesse local. Já o que estiver fora de uma função é considerado variável global.
 
+Dê preferência em variáveis locais pois elas liberam espaço na memória assim que a função termina de ser executada. Outro problema que passa a ser evitado: você redefinir sem querer uma variável global já existente.
 
+### Operadores aritméticos e funções matemáticas
 
+| Operador          | Símbolo |
+| ----------------- | ------- |
+| Soma/Concatenação | +       |
+| Subtração         | -       |
+| Multiplicação     | *       |
+| Divisão           | /       |
+| Módulo            | %       |
 
+#### Math
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Função                | Descrição                                                                                                | Exemplo                           |
+| --------------------- | -------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| `Math.abs(num)`       | Retorna o valor absoluto de um número (se um número for negativo, ele retorna o valor positivo absoluto) | `Math.abs(-3) //3`                |
+| `Math.ceil(num)`      | Arredonda o número para cima                                                                             | `Math.ceil(4.2) //5`              |
+| `Math.floor(num)`     | Arredonda o número para baixo                                                                            | `Math.floor(7.9) //7`             |
+| `Math.pow(base, exp)` | Retorna a base elevada ao expoente                                                                       | `Math.pow(3,2) //9`               |
+| `Math.random()`       | Gera um número aleatório de 0 a 1 com várias casas decimais                                              | `Math.random() //0.6505318643841` |
+| `Math.round(num)`     | Arredonda o número para o inteiro mais próximo                                                           | `Math.round(2.7) //3`             |
+| `Math.sqrt(num)`      | Retorna a raiz quadrada de um número                                                                     | `Math.sqrt(16) //4`               |
 
 
